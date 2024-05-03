@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <style>
+        h1 {
+            margin-top: 15px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        body {
+            height: 100%;
+            width: 100%;
+            background: url(./G1.jpg);
+            background-repeat: no-repeat;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            height: 70vh;
+            width: 40vw;
+        }
+        
+        .game {
+            height: 80%;
+            width: 80%;
+            margin-top: 10px;
+        }
+        
+        table {
+            height: 100%;
+            width: 100%;
+        }
+        
+        tr {
+            height: 30%;
+            width: 100%;
+        }
+        
+        td {
+            width: 30%;
+            height: 30%;
+        }
+        
+        .box {
+            width: 80%;
+            height: 80%;
+            border-radius: 7px;
+            border: none;
+            background-color: rgba(148, 198, 198, 0.5);
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+            font-size: 10vmin;
+            color: rgba(243, 8, 8, 0.8)
+        }
+        
+        .reset {
+            height: 7vh;
+            width: 10vw;
+            color: blue;
+            font-size: x-large;
+            font-weight: bolder;
+            background-color: bisque;
+            border-radius: 8px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .reset:hover {
+            color: white;
+            background-color: black;
+        }
+        
+        #result {
+            width: 50%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: chartreuse;
+            font-size: x-large;
+            background-color: rgba(55, 2, 246, 0.7);
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="container">
+            <h1>Tic-Tac-Toe</h1>
+            <div class="game">
+                <table>
+                    <tr>
+                        <td><button class="box"></button></td>
+                        <td><button class="box"></button></td>
+                        <td><button class="box"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="box"></button></td>
+                        <td><button class="box"></button></td>
+                        <td><button class="box"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="box"></button></td>
+                        <td><button class="box"></button></td>
+                        <td><button class="box"></button></td>
+                    </tr>
+                </table>
+            </div>
+            <h1 id="result"></h1>
+            <button class="reset" onclick="Reset()">Reset Game</button>
+        </div>
+    </center>
+    <script src="game.js"></script>
+</body>
+
+</html>
